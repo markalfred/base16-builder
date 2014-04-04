@@ -507,6 +507,61 @@
 				<string>#<%= @base["07"]["hex"] %></string>
 			</dict>
 		</dict>
+
+				<!-- Git -->
+
+		<dict>
+			<key>name</key>
+			<string>Git Diff Filename</string>
+			<key>scope</key>
+			<string>meta.diff.header</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#<%= @base["04"]["hex"] %></string>
+				<key>foreground</key>
+				<string>#<%= @base["07"]["hex"] %></string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Git Diff Blob</string>
+			<key>scope</key>
+			<string>meta.diff.range.unified</string>
+			<key>settings</key>
+			<dict>
+			<key>fontStyle</key>
+			<string>italic</string>
+			<key>foreground</key>
+			<string>#<%= @base["0D"]["hex"] %></string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Git Status Branchname</string>
+			<key>scope</key>
+			<string>support.type.git-status.branch</string>
+			<key>settings</key>
+			<dict>
+			<key>foreground</key>
+			<string>#<%= @base["0A"]["hex"] %></string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Git Shas</string>
+			<key>scope</key>
+			<string>source.git-show.commit.sha, entity.other.git-status.hex, entity.other.git-blame.hex, meta.diff.git-diff.header.extended.index.from-sha, meta.diff.git-diff.header.extended.index.to-sha</string>
+			<key>settings</key>
+			<dict>
+			<key>foreground</key>
+			<string>#<%= @base["09"]["hex"] %></string>
+			</dict>
+		</dict>
+
 	</array>
 	<key>uuid</key>
 	<string><%= @uuid %></string>
